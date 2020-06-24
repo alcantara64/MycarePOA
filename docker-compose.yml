@@ -3,6 +3,7 @@ services:
   ethereum-node:
     image: parity/parity:latest
     container_name: my-parity
+    user: root
     command:
         --chain dev
         --jsonrpc-interface all
